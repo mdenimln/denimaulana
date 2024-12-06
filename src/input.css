@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.stroke-text-name{
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+.stroke-text-name-light{
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+.active{
+    @apply border border-dashed;
+}
+/* .activeSpan{
+    @apply w-7 h-7 border border-dashed bg-transparent rounded-full;
+} */

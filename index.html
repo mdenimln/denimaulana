@@ -1,0 +1,377 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./dist/output.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/icons/all.min.css">
+  <link rel="stylesheet" href="./src/icons/brands.min.css">
+  <link rel="stylesheet" href="./src/icons/fontawesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#F2F5F8] scroll-smooth">
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <header class=" container mx-auto mb-7 px-4 max-w-xl grid gap-5 sm:max-w-xl md:max-w-2xl lg:grid-cols-3 lg:max-w-5xl lg:px-8 xl:max-w-[1340px] xl:px-20">
+    <nav class="flex flex-row-reverse gap-5 items-center lg:order-3 lg:items-start lg:gap-4">
+      <div class="toggle-menu bg-primary-0 group p-[15px] rounded-b-lg lg:p-4">
+
+        <svg class="w-6 h-6 text-slate-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M10 12v1h4v-1m4 7H6a1 1 0 0 1-1-1V9h14v9a1 1 0 0 1-1 1ZM4 5h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
+        </svg>
+        
+      </div>
+      <a href="" class="uppercase text-[16px] font-medium font-mono lg:mt-4 lg:text-[17px] text-primary-0">Github</a>
+      <a href="" class="uppercase text-[16px] font-medium font-mono lg:mt-4 lg:text-[17px] text-primary-0">Resume</a>
+    </nav>
+    <div class="max-w-md md:max-w-xl lg:max-w-8xl  lg:col-span-2">
+      <h1 class="text-5xl text-primary-0 font-poppins font-semibold sm:text-6xl md:text-[65px] lg:text-7xl lg:pt-10">Deni <span class="stroke-text-name ">Maulana</span></h1>
+    </div>
+  </header>
+
+  <main class="flex flex-col px-4 mx-auto max-w-xl md:max-w-2xl lg:max-w-5xl lg:px-8 lg:flex-row lg:gap-12 xl:max-w-[1340px] xl:px-20">
+    <div>
+      <!-- SECTION NAVIGASI -->
+      <section id="naviget" class="container mx-auto sticky top-6 mb-5 rounded-md shadow-lg bg-primary-0 p-[10px]">
+        
+        <ul class="text-white w-full flex justify-center items-center lg:flex-col lg:w-[280px] lg:p-7 lg:gap-6 xl:w-[230px]">
+
+          <a href="#about" style="width: 43px; height: 43px;" class="active flex justify-center items-center rounded-full lg:hidden ">
+            <span class="">A</span>
+          </a>
+          <a href="#about" class="navilistSpan w-full hidden lg:flex lg:justify-between lg:items-center font-mono opacity-70 hover:opacity-100" >
+            <p>ABOUT ME</p>
+            <span name="about" class="w-1 h-1 bg-white activeSpan"></span>
+          </a>
+
+          <a href="#portfolio" style="width: 43px; height: 43px;" class="flex justify-center items-center rounded-full lg:hidden">
+            <span class="">P</span>
+          </a>
+          <a href="#portfolio" class="navilistSpan w-full hidden lg:flex lg:justify-between lg:items-center font-mono opacity-70 hover:opacity-100"  >
+            <p>PORTFOLIO</p>
+            <span name="portfolio" class="w-1 h-1 bg-white"></span>
+          </a>
+          
+          <a href="#resume" style="width: 43px; height: 43px;" class="flex justify-center items-center rounded-full lg:hidden">
+            <span class="">R</span>
+          </a>
+          <a href="#resume" class="navilistSpan w-full hidden lg:flex lg:justify-between lg:items-center font-mono opacity-70 hover:opacity-100">
+            <p>RESUME</p>
+            <span name="resume" class="w-1 h-1 bg-white"></span>
+          </a>
+
+          <a href="#creative" style="width: 43px; height: 43px;" class="flex justify-center items-center rounded-full lg:hidden">
+            <span class="">C</span>
+          </a>
+          <a href="#creative" class="navilistSpan w-full hidden lg:flex lg:justify-between lg:items-center font-mono opacity-70 hover:opacity-100"  >
+            <p>CREATIVE</p>
+            <span name="creative" class="w-1 h-1 bg-white"></span>
+          </a>
+        </ul>
+         
+      </section>
+    </div>
+
+    <div>
+      <!-- SECTION ABOUT -->
+      <section id="about" class="container bg-white grid mx-auto rounded-lg border shadow-lg p-5 py-10 mb-5 md:px-8 lg:px-11 gap-5">
+        
+        <div class="grid gap-5 xl:grid-cols-3 xl:pt-2">
+          <div class="w-60 h-60 bg-primary-0 rounded-full relative xl:w-[220px] xl:h-[220px]">
+            <div class="absolute  bottom-2 left-5 bg-[rgba(0,0,0,0.35)] rounded-full py-[6px] px-2 backdrop-blur-sm">
+              <h2 class=" text-slate-200 uppercase font-mono text-xs">Hello I'm Deni</h2>
+            </div>
+          </div>
+          
+          <div class="flex flex-col gap-2 mt-1 col-span-2 xl:pl-7 xl:pr-3">
+            <h3 class="text-primary-0 text-sm font-bold font-mono xl:mb-5">// ABOUT ME</h3>
+            <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]">Web Designer (FrontEnd)</h2>
+            <p class="text-primary-0 opacity-[0.7] text-sm font-normal font-sans leading-7 xl:text-[18px]">Hello! 👋 ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa deserunt modi recusandae, ratione odio labore nemo dignissimos vel praesentium doloremque corrupti debitis accusantium a voluptatem iusto nam aliquid est.</p>
+          </div>
+        </div>
+
+        
+        <ul class="grid gap-3 xl:grid-cols-3 xl:justify-center">
+          <li class="flex items-center gap-2">
+            <h3 class="text-primary-0 text-[48px] font-bold font-mono stroke-text-name xl:text-[60px]">4</h3>
+            <div class="flex flex-col font-medium font-mono uppercase">
+              <span class="text-xl">+</span>
+              <h4 class="text-[14px] xl:text-[16px]">Years Learn Digital</h4>
+            </div>
+          </li>
+          <li class="flex items-center gap-2">
+            <h3 class="text-primary-0 text-[48px] font-bold font-mono stroke-text-name xl:text-[60px]">10</h3>
+            <div class="flex flex-col font-medium font-mono uppercase">
+              <span class="text-xl">k</span>
+              <h4 class="text-[14px] xl:text-[16px]">Hours of working</h4>
+            </div>
+          </li>
+          <li class="flex items-center gap-2">
+            <h3 class="text-primary-0 text-[48px] font-bold font-mono stroke-text-name xl:text-[60px]">15</h3>
+            <div class="flex flex-col font-medium font-mono uppercase">
+              <span class="text-xl">+</span>
+              <h4 class="text-[14px] xl:text-[16px]">Projects Done</h4>
+            </div>
+          </li>
+        </ul>
+  
+        <ul class="flex gap-2 flex-wrap">
+          <li class="flex items-center gap-1 rounded-full border border-slate-100 justify-center px-3 py-2 shadow-md opacity-[0.7]">
+            <svg class="w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+              <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+            </svg>
+            <span class="text-slate-500 text-xs font-normal font-sans">LinkedIn</span>          
+          </li>
+          
+          <li class="flex items-center gap-1 rounded-full border border-slate-100 justify-center px-3 py-2 shadow-md opacity-[0.7]">
+            <svg class="w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+            </svg>
+            
+            <span class="text-slate-500 text-xs font-normal font-sans" >Instagram</span>
+          </li>
+  
+          <li class="flex items-center gap-1 rounded-full border border-slate-100 justify-center px-3 py-2 shadow-md opacity-[0.7]">
+            <svg class="w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+            </svg>
+            
+            <span class="text-slate-500 text-xs font-normal font-sans">Instagram Art</span>
+          </li>
+          <li></li>
+        </ul>
+      </section>
+  
+      <!-- SECTION CAERTIFIKASI -->
+       <section id="licenses" class="container bg-white grid mx-auto rounded-lg border shadow-lg p-5 py-10 mb-5 md:px-8 lg:px-11">
+        <div class="mb-2">
+          <h3 class="text-primary-0 text-sm font-bold font-mono">// LICENSES & CERTIFICATIONS</h3>
+        </div>
+  
+        <ul class="flex flex-nowrap gap-2 justify-center">
+          <li class="w-1/3  flex justify-center items-center">
+            <a href=""><img src="./assets/licenses/google.png" alt=""></a>
+          </li>
+          <li class=" flex justify-center items-center">
+            <a href=""><img src="./assets/licenses/dicoding.png" alt=""></a>
+          </li>
+          <li class=" flex justify-center items-center">
+            <a href=""><img src="./assets/licenses/google.png" alt=""></a>
+          </li>
+        </ul>
+  
+       </section>
+  
+       <!-- SECTION PORTFOLIO -->
+       <section id="portfolio" class="container bg-white grid mx-auto rounded-lg border shadow-lg p-5 py-10 mb-5 md:px-8 lg:px-11">
+        <div class="flex flex-col gap-2 mb-5">
+          <h3 class="text-primary-0 text-sm font-bold font-mono">// PORTFOLIO</h3>
+          <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]">My Latest Work</h2>
+          <p class="text-primary-0 text-sm font-normal font-sans opacity-[0.7] leading-7 xl:text-[18px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus voluptatem quis modi a, adipisci commodi consequuntur officiis sit magni nulla!</p>
+        </div>
+  
+        <div class="flex flex-col gap-5 lg:gap-7">
+          <ul class="flex gap-2 justify-start items-center flex-wrap">
+            <li class="border border-dotted border-slate-950 px-3 py-2 text-sm rounded-full font-mono font-semibold">Show All</li>
+            <li class="border border-dotted border-slate-950 px-3 py-2 text-sm rounded-full font-mono font-semibold">Web Design</li>
+            <li class="border border-dotted border-slate-950 px-3 py-2 text-sm rounded-full font-mono font-semibold">Logic Programming</li>
+          </ul>
+  
+          <div class="container grid grid-cols-1 gap-3 md:gap-5 lg:gap-7 xl:grid-cols-2">
+            <div class="w-[100%] rounded-lg overflow-hidden relative group">
+              <div class="-z-10 group-hover:blur-sm group-hover:scale-110 transition-all ease-in-out duration-300">
+                <img src="./assets/portfolio/1.png" alt="" class="-z-0">
+              </div>
+              <div class="absolute z-50 top-5 right-5 bg-[rgba(0,0,0,0.2)] px-3 py-2 rounded-full flex justify-center items-center backdrop-blur-sm" >
+                <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest z-20">Web Design</h2>
+              </div>
+              <div class="w-[90%] mb-7 ml-7 absolute flex inset-0 items-end justify-star">
+                <h1 class="inset-0 items-end justify-star font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]">Express Students` Attacks Creatively.</h1>
+              </div>
+            </div>
+            <div class="w-[100%] rounded-lg overflow-hidden relative group">
+              <div class="-z-10 group-hover:blur-sm group-hover:scale-110 transition-all ease-in-out duration-300">
+                <img src="./assets/portfolio/2.png" alt="" class="-z-0">
+              </div>
+              <div class="absolute z-50 top-5 right-5 bg-[rgba(0,0,0,0.2)] px-3 py-2 rounded-full flex justify-center items-center backdrop-blur-sm" >
+                <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest z-20">Web Design</h2>
+              </div>
+              <div class="w-[90%] mb-5 ml-5 absolute flex inset-0 items-end justify-star">
+                <h1 class="inset-0 items-end justify-star font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]">School Information And News.</h1>
+              </div>
+            </div>
+            <div class="w-[100%] rounded-lg overflow-hidden relative group">
+              <div class="-z-10 group-hover:blur-sm group-hover:scale-110 transition-all ease-in-out duration-300">
+                <img src="./assets/portfolio/3.png" alt="" class="-z-0">
+              </div>
+              <div class="absolute z-50 top-5 right-5 bg-[rgba(0,0,0,0.2)] px-3 py-2 rounded-full flex justify-center items-center backdrop-blur-sm" >
+                <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest z-20">Web Design</h2>
+              </div>
+              <div class="w-[90%] mb-5 ml-5 absolute flex inset-0 items-end justify-star">
+                <h1 class="inset-0 items-end justify-star font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]">Learn Communication by Reading an Article.</h1>
+              </div>
+            </div>
+            <div class="w-[100%] rounded-lg overflow-hidden relative group">
+              <div class="-z-10 group-hover:blur-sm group-hover:scale-110 transition-all ease-in-out duration-300">
+                <img src="./assets/portfolio/4.png" alt="" class="-z-0">
+              </div>
+              <div class="absolute z-50 top-5 right-5 bg-[rgba(0,0,0,0.2)] px-3 py-2 rounded-full flex justify-center items-center backdrop-blur-sm" >
+                <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest z-20">Web Design</h2>
+              </div>
+              <div class="w-[90%] mb-5 ml-5 absolute flex inset-0 items-end justify-star">
+                <h1 class="inset-0 items-end justify-star font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]">Personal Blog and About Me.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+       </section>
+
+       <!-- SECTION RESUME -->
+        <section id="resume" class="container bg-white grid mx-auto rounded-lg border shadow-lg p-5 py-10 mb-5 md:px-8 lg:px-11">
+          
+          <div class="flex flex-col gap-2 mb-5">
+            <h3 class="text-primary-0 text-sm font-bold font-mono">// RESUME</h3>
+            <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]">Education & Experience</h2>
+            <p class="text-primary-0 text-sm font-normal font-sans opacity-[0.7] leading-7 xl:text-[18px]">With experience in programming, graphic design & product development and Entrepreneurship, I bring a comprehensive skill set to every project. 🚀</p>
+          </div>
+
+          <div class="grid gap-5 xl:grid-cols-2 xl:grid-rows-2 xl:gap-5">
+
+            <div class="flex flex-col gap-4 border border-l-2 border-t-0 border-r-0 border-b-0 border-dashed border-gray-200 p-5">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 4h12M6 4v16M6 4H5m13 0v16m0-16h1m-1 16H6m12 0h1M6 20H5M9 7h1v1H9V7Zm5 0h1v1h-1V7Zm-5 4h1v1H9v-1Zm5 0h1v1h-1v-1Zm-3 4h2a1 1 0 0 1 1 1v4h-4v-4a1 1 0 0 1 1-1Z"/>
+              </svg>
+              
+              <a href="" class="flex flex-col items-start gap-2">
+                <div class="flex items-center h-10 border border-dashed px-4 rounded-full border-gray-400 font-mono text-xl relative">
+                  AUG 2022 - DEC 2025
+                  <span class="w-2 h-2 rounded-full bg-black absolute -left-[26px]"></span>
+                </div>
+                <h2 class="font-poppins font-medium text-lg">Sistem Information And Aplication</h2>
+                <p class="font-normal font-sans text-lg opacity-70">@ Smk Fajar Utama</p>
+              </a>
+            </div>
+
+            <div class="flex flex-col gap-4 border border-l-2 border-t-0 border-r-0 border-b-0 border-dashed border-gray-200 p-5 row-span-2">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 9h6m-6 3h6m-6 3h6M6.996 9h.01m-.01 3h.01m-.01 3h.01M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
+              </svg>
+              
+              
+              
+              <a href="" class="flex flex-col items-start gap-2">
+                <div class="flex items-center h-10 border border-dashed px-4 rounded-full border-gray-400 font-mono text-xl relative">
+                  JUN 2023
+                  <span class="w-2 h-2 rounded-full bg-black absolute -left-[26px]"></span>
+                </div>
+                <h2 class="font-poppins font-medium text-lg">Computing and Programming with Logic and Creativity</h2>
+                <p class="font-normal font-sans text-lg opacity-70">@ Universitas Bakrie</p>
+              </a>
+
+              <a href="" class="flex flex-col items-start gap-2">
+                <div class="flex items-center h-10 border border-dashed px-4 rounded-full border-gray-400 font-mono text-xl relative">
+                  JUN 2023
+                  <span class="w-2 h-2 rounded-full bg-black absolute -left-[26px]"></span>
+                </div>
+                <h2 class="font-poppins font-medium text-lg">Learn to Create a Web FrontEnd</h2>
+                <p class="font-normal font-sans text-lg opacity-70">@ Dicoding</p>
+              </a>
+
+              <a href="" class="flex flex-col items-start gap-2">
+                <div class="flex items-center h-10 border border-dashed px-4 rounded-full border-gray-400 font-mono text-xl relative">
+                  JUL 2023
+                  <span class="w-2 h-2 rounded-full bg-black absolute -left-[26px]"></span>
+                </div>
+                <h2 class="font-poppins font-medium text-lg">Class Software FroenEnd Development</h2>
+                <p class="font-normal font-sans text-lg opacity-70">@ Myskill</p>
+              </a>
+
+              <a href="" class="flex flex-col items-start gap-2">
+                <div class="flex items-center h-10 border border-dashed px-4 rounded-full border-gray-400 font-mono text-xl relative">
+                  OCT 2022
+                  <span class="w-2 h-2 rounded-full bg-black absolute -left-[26px]"></span>
+                </div>
+                <h2 class="font-poppins font-medium text-lg">GEBYARIT2024</h2>
+                <p class="font-normal font-sans text-lg opacity-70">@ UIKA Bogor</p>
+              </a>
+            </div>
+
+            <div class="flex flex-col gap-4 border border-l-2 border-t-0 border-r-0 border-b-0 border-dashed border-gray-200 p-5">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 0 0-2 2v4m5-6h8M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m0 0h3a2 2 0 0 1 2 2v4m0 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6m18 0s-4 2-9 2-9-2-9-2m9-2h.01"/>
+              </svg>              
+              
+              <a href="" class="flex flex-col items-start gap-2">
+                <div class="flex items-center h-10 border border-dashed px-4 rounded-full border-gray-400 font-mono text-xl relative">
+                  AUG 2022 - DEC 2025
+                  <span class="w-2 h-2 rounded-full bg-black absolute -left-[26px]"></span>
+                </div>
+                <h2 class="font-poppins font-medium text-lg">Product designer</h2>
+                <p class="font-normal font-sans text-lg opacity-70">@ Frelance</p>
+              </a>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- SECTION CREATIVE -->
+         <section id="creative" class="container bg-white grid mx-auto rounded-lg border shadow-lg p-5 py-10 mb-5 md:px-8 lg:px-11">
+          <div class="flex flex-col gap-2 mb-5">
+            <h3 class="text-primary-0 text-sm font-bold font-mono">// CREATIVE</h3>
+            <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]">Creative Space</h2>
+            <p class="text-primary-0 text-sm font-normal font-sans opacity-[0.7] leading-7 xl:text-[18px]">Explore my creative space where each piece reflects my passion for blending artistry and technology to create visually compelling work. 🚀</p>
+          </div>
+
+          <div class="grid gap-5">
+            <div class="grid xl:grid-cols-2 gap-5 xl:gap-8">
+              <div class=" rounded-lg overflow-hidden relative group border"> 
+                <div class="w-full -z-10 group-hover:blur-sm group-hover:scale-110 transition-all ease-in-out duration-300">
+                  <img src="./assets/creative/01.png" alt="" class="-z-0 w-full">
+                </div>
+                <div class="absolute z-50 top-5 right-5 bg-[rgba(0,0,0,0.2)] px-3 py-2 rounded-full flex justify-center items-center backdrop-blur-sm" >
+                  <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest z-20">Ilustrations</h2>
+                </div>
+              </div>
+              <div class="flex flex-col items-start gap-2">
+                <p>Ilustrations</p>
+                <a href="" class="text-xl font-semibold md:text-2xl lg:text-3xl">@damen.me</a>
+                <a href="" class="flex items-center border border-dashed px-4 py-2 rounded-full border-gray-400 font-mono text-sm">See More</a>
+              </div>
+            </div>
+            <div class="grid xl:grid-cols-2 gap-5 xl:gap-8">
+              <div class="rounded-lg overflow-hidden relative group"> 
+                <div class="w-full -z-10 group-hover:blur-sm group-hover:scale-110 transition-all ease-in-out duration-300">
+                  <img src="./assets/creative/01.png" alt="" class="-z-0 w-full">
+                </div>
+                <div class="absolute z-50 top-5 right-5 bg-[rgba(0,0,0,0.2)] px-3 py-2 rounded-full flex justify-center items-center backdrop-blur-sm" >
+                  <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest z-20">Photography</h2>
+                </div>
+              </div>
+              <div class="flex flex-col items-start gap-2">
+                <p>Photography</p>
+                <a href="" class="text-xl font-semibold md:text-2xl lg:text-3xl">@damen.me</a>
+                <a href="" class="flex items-center border border-dashed px-4 py-2 rounded-full border-gray-400 font-mono text-sm">See More</a>
+              </div>
+            </div>
+
+          </div>
+
+         </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="/src/script.js"></script>
+</body>
+</html>
