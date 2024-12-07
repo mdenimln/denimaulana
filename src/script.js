@@ -8,7 +8,7 @@ window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach((sec) => {
-    const sectionTop = sec.offsetTop - 60; // Sesuaikan tinggi navbar
+    const sectionTop = sec.offsetTop - 150; // Sesuaikan tinggi navbar
     const sectionHeight = sec.offsetHeight;
 
     if (
