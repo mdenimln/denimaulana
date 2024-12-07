@@ -3,25 +3,42 @@ let navlinks = document.querySelectorAll("#naviget ul a");
 let navlinksSpan = document.querySelectorAll("#naviget ul .navilistSpan span");
 console.log(navlinksSpan);
 console.log(navlinks);
+window.addEventListener("load", () => {
+  window.addEventListener("scroll", () => {
+    let current = "";
+    let isFirstSectionActive = false;
 
-window.addEventListener("scroll", () => {
-  let current = "";
+    sections.forEach((sec) => {
+      const sectionTop = sec.offsetTop - 70; // Sesuaikan tinggi navbar
+      const sectionHeight = sec.offsetHeight;
 
-  sections.forEach((sec) => {
-    const sectionTop = sec.offsetTop; // Sesuaikan tinggi navbar
-    const sectionHeight = sec.offsetHeight;
+      if (
+        window.scrollY >= sectionTop &&
+        window.scrollY < sectionTop + sectionHeight
+      ) {
+        current = sec.getAttribute("id");
+        if (current === "about") {
+          isFirstSectionActive = true; // Jika berada di section pertama
+        }
+      }
+    });
+    navlinks.forEach((link) => {
+      link.classList.remove("active", "animate-bounceIn");
+    });
+    navlinks.forEach((link) => {
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active", "animate-bounceIn");
 
-    if (
-      window.scrollY >= sectionTop &&
-      window.scrollY < sectionTop + sectionHeight
-    ) {
-      current = sec.getAttribute("id");
-    }
-  });
-  navlinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href").includes(current)) {
-      link.classList.add("active");
+        if (isFirstSectionActive && !link.classList.contains("animate-bounceIn")) {
+          link.classList.add("animate-bounceIn");
+        }
+      }
+    });
+
+    if (!current) {
+      navlinks.forEach((link) =>
+        link.classList.remove("active", "nimate-bounceIn")
+      );
     }
   });
 });

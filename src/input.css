@@ -11,7 +11,7 @@
     -webkit-text-stroke: 1px white;
 }
 .active{
-    @apply border border-dashed;
+    @apply border border-dashed animate-bounceIn;
 }
 /* .activeSpan{
     @apply w-7 h-7 border border-dashed bg-transparent rounded-full;
