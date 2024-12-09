@@ -1,8 +1,9 @@
 let sections = document.querySelectorAll("section");
 let navlinks = document.querySelectorAll("#naviget ul a");
 let navlinksSpan = document.querySelectorAll("#naviget ul .navilistSpan span");
-console.log(navlinksSpan);
-console.log(navlinks);
+
+
+
 window.addEventListener("load", () => {
   window.addEventListener("scroll", () => {
     let current = "";

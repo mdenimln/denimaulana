@@ -1667,6 +1667,14 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-\[url\(\'\/assets\/profile\/animateprofile\.gif\'\)\] {
+  background-image: url('/assets/profile/animateprofile.gif');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1689,6 +1697,10 @@ input:checked + .toggle-bg {
 
 .p-\[15px\] {
   padding: 15px;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-2 {
@@ -1980,10 +1992,6 @@ input:checked + .toggle-bg {
   transition-duration: 100ms;
 }
 
-.duration-200 {
-  transition-duration: 200ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -2026,6 +2034,7 @@ input:checked + .toggle-bg {
   animation: bounceIn 0.3s ease-out;
   border-width: 1px;
   border-style: dashed;
+  opacity: 1;
 }
 
 /* .activeSpan{
@@ -2135,6 +2144,10 @@ input:checked + .toggle-bg {
 .focus\:ring-gray-200:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity, 1));
+}
+
+.active\:opacity-100:active {
+  opacity: 1;
 }
 
 .group:hover .group-hover\:scale-110 {
