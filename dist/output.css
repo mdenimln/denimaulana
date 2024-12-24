@@ -1272,10 +1272,6 @@ input:checked + .toggle-bg {
   width: 50%;
 }
 
-.w-1\/3 {
-  width: 33.333333%;
-}
-
 .w-2 {
   width: 0.5rem;
 }
@@ -1667,16 +1663,12 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-\[url\(\'\/assets\/profile\/animateprofile\.gif\'\)\] {
-  background-image: url('/assets/profile/animateprofile.gif');
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-2\.5 {
@@ -1697,10 +1689,6 @@ input:checked + .toggle-bg {
 
 .p-\[15px\] {
   padding: 15px;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-2 {
