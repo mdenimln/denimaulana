@@ -44,21 +44,15 @@ window.addEventListener("load", () => {
   });
 });
 
-// window.onscroll = () => {
-//   sections.forEach((sec) => {
-//     let top = window.scrollY;
-//     let offset = sec.offsetTop - 150;
-//     let height = sec.offsetHeight;
-//     let id = sec.getAttribute("id");
+// Translate Bahasa
+let toggleLanguage = document.querySelector(".toggle-language");
+let language = document.querySelector(".language");
 
-//     if (top >= offset && top < offset + height) {
-//       navlinks.forEach((links) => {
-//         links.classList.remove("active");
-//         document
-//           .querySelector("#naviget ul a[href*=" + id + "]")
-//           .classList.add("active");
-//       });
-//     }
-//   });
+toggleLanguage.addEventListener("click", () => {
+  if (language.classList.contains("hidden")) {
+    language.classList.remove("hidden");
+  } else {
+    language.classList.add("hidden");
+  }
+});
 
-// };
