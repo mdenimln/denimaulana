@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html class="scroll-smooth" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +16,8 @@
     <nav class="flex flex-row-reverse gap-5 items-center lg:order-3 lg:items-start lg:gap-4">
       <div class="toggle-language bg-primary-0 group p-[15px] rounded-b-lg lg:p-4 hover:scale-105 hover:cursor-pointer transition-all duration-100 flex gap-5">
         <ul class="hidden language text-white gap-2">
-         <li class="lang-id cursor-pointer hover:font-bold">ID</li>
-         <li class="lang-en cursor-pointer hover:font-bold"">EN</li>
+         <li class="lang-id cursor-pointer hover:font-bold" data-lang="id">ID</li>
+         <li class="lang-en cursor-pointer hover:font-bold" data-lang="en">EN</li>
         </ul>
         <svg class="w-6 h-6 text-slate-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m13 19 3.5-9 3.5 9m-6.125-2h5.25M3 7h7m0 0h2m-2 0c0 1.63-.793 3.926-2.239 5.655M7.5 6.818V5m.261 7.655C6.79 13.82 5.521 14.725 4 15m3.761-2.345L5 10m2.761 2.655L10.2 15"/>
@@ -26,7 +26,7 @@
        
     
       <a href="https://github.com/mdenimln" target="_blank" class="uppercase text-[16px] font-medium font-mono lg:mt-4 lg:text-[17px] text-primary-0 hover:border-b-2 border-dashed border-gray-500 hover:font-bold hover:border hover:border-t-0 hover:border-r-0 hover:border-l-0">Github</a>
-      <a href="https://drive.google.com/file/d/13WlQnarYVyXekM1Pe-1rInM7_sqR7fY4/view?usp=drive_link" target="_blank" class="uppercase text-[16px] font-medium font-mono lg:mt-4 lg:text-[17px] text-primary-0 hover:border-b-2 border-dashed border-gray-500 hover:font-bold hover:border hover:border-t-0 hover:border-r-0 hover:border-l-0">Resume</a>
+      <a href="https://drive.google.com/file/d/13WlQnarYVyXekM1Pe-1rInM7_sqR7fY4/view?usp=drive_link" target="_blank" class="uppercase text-[16px] font-medium font-mono lg:mt-4 lg:text-[17px] text-primary-0 hover:border-b-2 border-dashed border-gray-500 hover:font-bold hover:border hover:border-t-0 hover:border-r-0 hover:border-l-0" data-i18n="header.resume">Resume</a>
     </nav>
     <div class="max-w-md md:max-w-xl lg:max-w-8xl  lg:col-span-2">
       <h1 class="text-5xl text-primary-0 font-poppins font-semibold sm:text-6xl md:text-[65px] lg:text-7xl lg:pt-10">Deni <span class="stroke-text-name ">Maulana</span></h1>
@@ -44,7 +44,7 @@
             <span class="">A</span>
           </a>
           <a href="#about" class="navilistSpan w-full hidden rounded-md p-2 lg:flex lg:justify-between lg:items-center font-mono opacity-70 hover:opacity-100 active:opacity-100">
-            <p>ABOUT ME</p>
+            <p data-i18n="nav.about">ABOUT ME</p>
             <span name="about" class="w-1 h-1 bg-white activeSpan"></span>
           </a>
 
@@ -52,7 +52,7 @@
             <span class="">P</span>
           </a>
           <a href="#portfolio" class="navilistSpan w-full hidden rounded-md p-2 lg:flex lg:justify-between lg:items-center font-mono opacity-70 hover:opacity-100"  >
-            <p>PORTFOLIO</p>
+            <p data-i18n="nav.portfolio">PORTFOLIO</p>
             <span name="portfolio" class="w-1 h-1 bg-white"></span>
           </a>
           
@@ -60,7 +60,7 @@
             <span class="">R</span>
           </a>
           <a href="#resume" class="navilistSpan w-full hidden rounded-md p-2 lg:flex lg:justify-between lg:items-center font-mono opacity-70 hover:opacity-100">
-            <p>RESUME</p>
+            <p data-i18n="nav.resume">RESUME</p>
             <span name="resume" class="w-1 h-1 bg-white"></span>
           </a>
 
@@ -68,7 +68,7 @@
             <span class="">C</span>
           </a>
           <a href="#creative" class="navilistSpan w-full hidden rounded-md p-2 lg:flex lg:justify-between lg:items-center font-mono opacity-70 hover:opacity-100"  >
-            <p>CREATIVE</p>
+            <p data-i18n="nav.creative">CREATIVE</p>
             <span name="creative" class="w-1 h-1 bg-white"></span>
           </a>
         </ul>
@@ -96,9 +96,9 @@
           </div>
           
           <div class="min-w-0 flex flex-col gap-2 mt-1 lg:pl-7 lg:pr-3">
-            <h3 class="text-primary-0 text-sm font-bold font-mono lg:mb-5">// ABOUT ME</h3>
-            <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]">Web Designer (FrontEnd)</h2>
-            <p class="text-primary-0 opacity-[0.7] text-sm font-normal font-sans leading-7 xl:text-[18px]">Hello! 👋 I'm Deni, a dedicated vocational student majoring in Information Systems with more than 2 years of experience in creating digital solutions. I specialize in creating user-centric interfaces and conducting research to optimize the user experience. I want to learn & express my creativity and work with a team to bring ideas to life.</p>
+            <h3 class="text-primary-0 text-sm font-bold font-mono lg:mb-5" data-i18n="about.eyebrow">// ABOUT ME</h3>
+            <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]" data-i18n="about.title">Web Designer (FrontEnd)</h2>
+            <p class="text-primary-0 opacity-[0.7] text-sm font-normal font-sans leading-7 xl:text-[18px]" data-i18n="about.description">Hello! I'm Deni, a dedicated vocational student majoring in Information Systems with more than 2 years of experience in creating digital solutions. I specialize in creating user-centric interfaces and conducting research to optimize the user experience. I want to learn and express my creativity and work with a team to bring ideas to life.</p>
           </div>
         </div>
 
@@ -108,21 +108,21 @@
             <h3 class="text-primary-0 text-[48px] font-bold font-mono stroke-text-name xl:text-[60px]">4</h3>
             <div class="flex flex-col font-medium font-mono uppercase">
               <span class="text-xl">+</span>
-              <h4 class="text-[14px] xl:text-[16px]">Years Learn Digital</h4>
+              <h4 class="text-[14px] xl:text-[16px]" data-i18n="about.stats.years">Years Learn Digital</h4>
             </div>
           </li>
           <li class="flex items-center gap-2">
             <h3 class="text-primary-0 text-[48px] font-bold font-mono stroke-text-name xl:text-[60px]">6</h3>
             <div class="flex flex-col font-medium font-mono uppercase">
               <span class="text-xl">k</span>
-              <h4 class="text-[14px] xl:text-[16px]">Hours of Expertise</h4>
+              <h4 class="text-[14px] xl:text-[16px]" data-i18n="about.stats.hours">Hours of Expertise</h4>
             </div>
           </li>
           <li class="flex items-center gap-2">
             <h3 class="text-primary-0 text-[48px] font-bold font-mono stroke-text-name xl:text-[60px]">15</h3>
             <div class="flex flex-col font-medium font-mono uppercase">
               <span class="text-xl">+</span>
-              <h4 class="text-[14px] xl:text-[16px]">Projects Done</h4>
+              <h4 class="text-[14px] xl:text-[16px]" data-i18n="about.stats.projects">Projects Done</h4>
             </div>
           </li>
         </ul>
@@ -149,7 +149,7 @@
               <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
             </svg>
             
-            <span class="text-slate-500 text-xs font-normal font-sans">Instagram Art</span>
+            <span class="text-slate-500 text-xs font-normal font-sans" data-i18n="about.social.art">Instagram Art</span>
           </a>
           <li></li>
         </ul>
@@ -158,7 +158,7 @@
       <!-- SECTION CAERTIFIKASI -->
        <section id="licenses" class="w-full bg-white grid mx-auto rounded-lg border shadow-lg p-5 py-10 mb-5 md:px-8 lg:px-11">
         <div class="mb-2">
-          <h3 class="text-primary-0 text-sm font-bold font-mono">// LICENSES & CERTIFICATIONS</h3>
+          <h3 class="text-primary-0 text-sm font-bold font-mono" data-i18n="licenses.eyebrow">// LICENSES & CERTIFICATIONS</h3>
         </div>
   
         <ul class="flex flex-nowrap gap-2 justify-center">
@@ -181,16 +181,16 @@
        <!-- SECTION PORTFOLIO -->
        <section id="portfolio" class="w-full bg-white grid mx-auto rounded-lg border shadow-lg p-5 py-10 mb-5 md:px-8 lg:px-11">
         <div class="flex flex-col gap-2 mb-5">
-          <h3 class="text-primary-0 text-sm font-bold font-mono">// PORTFOLIO</h3>
-          <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]">My Latest Work</h2>
-          <p class="text-primary-0 text-sm font-normal font-sans opacity-[0.7] leading-7 xl:text-[18px]">Developing an idea for creativity through digital and design, creating new innovations and turning user problems into opportunities with design!</p>
+          <h3 class="text-primary-0 text-sm font-bold font-mono" data-i18n="portfolio.eyebrow">// PORTFOLIO</h3>
+          <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]" data-i18n="portfolio.title">My Latest Work</h2>
+          <p class="text-primary-0 text-sm font-normal font-sans opacity-[0.7] leading-7 xl:text-[18px]" data-i18n="portfolio.description">Developing an idea for creativity through digital and design, creating new innovations and turning user problems into opportunities with design!</p>
         </div>
   
         <div class="flex flex-col gap-5 lg:gap-7">
           <ul class="flex gap-2 justify-start items-center flex-wrap">
-            <li class="border border-dotted border-slate-950 px-3 py-2 text-sm rounded-full font-mono font-semibold">Show All</li>
-            <li class="border border-dotted border-slate-950 px-3 py-2 text-sm rounded-full font-mono font-semibold">Web Design</li>
-            <li class="border border-dotted border-slate-950 px-3 py-2 text-sm rounded-full font-mono font-semibold">Logic Programming</li>
+            <li class="border border-dotted border-slate-950 px-3 py-2 text-sm rounded-full font-mono font-semibold" data-i18n="portfolio.filters.all">Show All</li>
+            <li class="border border-dotted border-slate-950 px-3 py-2 text-sm rounded-full font-mono font-semibold" data-i18n="portfolio.filters.web">Web Design</li>
+            <li class="border border-dotted border-slate-950 px-3 py-2 text-sm rounded-full font-mono font-semibold" data-i18n="portfolio.filters.logic">Logic Programming</li>
           </ul>
   
           <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 lg:gap-7">
@@ -202,7 +202,7 @@
                 <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest">Web Design</h2>
               </div>
               <div class="w-[90%] mb-7 ml-7 absolute flex inset-0 items-end justify-star">
-                <h1 class="inset-0 items-end justify-star font-poppins font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]">Express Students` Attacks Creatively.</h1>
+                <h1 class="inset-0 items-end justify-star font-poppins font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]" data-i18n="portfolio.items.1">Express Students` Attacks Creatively.</h1>
               </div>
             </div>
             <div class="w-[100%] rounded-lg overflow-hidden relative group">
@@ -213,7 +213,7 @@
                 <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest">Web Design</h2>
               </div>
               <div class="w-[90%] mb-5 ml-5 absolute flex inset-0 items-end justify-star">
-                <h1 class="inset-0 items-end justify-star font-poppins font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]">School Information And News.</h1>
+                <h1 class="inset-0 items-end justify-star font-poppins font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]" data-i18n="portfolio.items.2">School Information And News.</h1>
               </div>
             </div>
             <div class="w-[100%] rounded-lg overflow-hidden relative group">
@@ -224,7 +224,7 @@
                 <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest">Web Design</h2>
               </div>
               <div class="w-[90%] mb-5 ml-5 absolute flex inset-0 items-end justify-star">
-                <h1 class="inset-0 items-end justify-star font-poppins font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]">Learn Communication by Reading an Article.</h1>
+                <h1 class="inset-0 items-end justify-star font-poppins font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]" data-i18n="portfolio.items.3">Learn Communication by Reading an Article.</h1>
               </div>
             </div>
             <div class="w-[100%] rounded-lg overflow-hidden relative group">
@@ -235,7 +235,7 @@
                 <h2 class="text-white uppercase text-xs font-sans font-semibold tracking-widest">Web Design</h2>
               </div>
               <div class="w-[90%] mb-5 ml-5 absolute flex inset-0 items-end justify-star">
-                <h1 class="inset-0 items-end justify-star font-poppins font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]">Personal Blog and About Me.</h1>
+                <h1 class="inset-0 items-end justify-star font-poppins font-bold text-4xl drop-shadow-2xl stroke-text-name-light opacity-0 group-hover:opacity-100 hover:text-white group-hover:delay-100 group-hover:duration-75 tracking-wide md:text-[40px]" data-i18n="portfolio.items.4">Personal Blog and About Me.</h1>
               </div>
             </div>
           </div>
@@ -247,9 +247,9 @@
         <section id="resume" class="w-full bg-white grid mx-auto rounded-lg border shadow-lg p-5 py-10 mb-5 md:px-8 lg:px-11">
           
           <div class="flex flex-col gap-2 mb-5">
-            <h3 class="text-primary-0 text-sm font-bold font-mono">// RESUME</h3>
-            <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]">Education & Experience</h2>
-            <p class="text-primary-0 text-sm font-normal font-sans opacity-[0.7] leading-7 xl:text-[18px]">With experience in programming, graphic design & product development and Entrepreneurship, I bring a comprehensive skill set to every project. 🚀</p>
+            <h3 class="text-primary-0 text-sm font-bold font-mono" data-i18n="resume.eyebrow">// RESUME</h3>
+            <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]" data-i18n="resume.title">Education & Experience</h2>
+            <p class="text-primary-0 text-sm font-normal font-sans opacity-[0.7] leading-7 xl:text-[18px]" data-i18n="resume.description">With experience in programming, graphic design & product development and entrepreneurship, I bring a comprehensive skill set to every project.</p>
           </div>
 
           <div class="grid gap-5 lg:grid-cols-2 lg:grid-rows-2 lg:gap-5">
@@ -323,7 +323,7 @@
                   2024 - NOW
                   <span class="w-2 h-2 rounded-full bg-black absolute -left-[26px]"></span>
                 </div>
-                <h2 class="font-poppins font-medium text-lg">Product designer</h2>
+                <h2 class="font-poppins font-medium text-lg">WEB & Product designer</h2>
                 <p class="font-normal font-sans text-lg opacity-70">@ Frelance</p>
               </a>
             </div>
@@ -335,9 +335,9 @@
         <!-- SECTION CREATIVE -->
          <section id="creative" class="w-full bg-white grid mx-auto rounded-lg border shadow-lg p-5 py-10 mb-5 md:px-8 lg:px-11">
           <div class="flex flex-col gap-2 mb-5">
-            <h3 class="text-primary-0 text-sm font-bold font-mono">// CREATIVE</h3>
-            <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]">Creative Space</h2>
-            <p class="text-primary-0 text-sm font-normal font-sans opacity-[0.7] leading-7 xl:text-[18px]">Explore my creative space where each piece reflects my passion for blending artistry and technology to create visually compelling work. 🚀</p>
+            <h3 class="text-primary-0 text-sm font-bold font-mono" data-i18n="creative.eyebrow">// CREATIVE</h3>
+            <h2 class="text-primary-0 text-[25px] font-semibold font-poppins md:text-3xl xl:text-[40px] xl:leading-[50px]" data-i18n="creative.title">Creative Space</h2>
+            <p class="text-primary-0 text-sm font-normal font-sans opacity-[0.7] leading-7 xl:text-[18px]" data-i18n="creative.description">Explore my creative space where each piece reflects my passion for blending artistry and technology to create visually compelling work.</p>
           </div>
 
           <div class="grid gap-5">
@@ -479,14 +479,13 @@
 
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
-    var typed = new Typed('.auto-type', {
-      strings: ["HI THRERE!", "I'M DENI"],
+    window.typed = new Typed('.auto-type', {
+      strings: ["HI THERE!", "I'M DENI"],
       typeSpeed: 100,
       backSpeed: 100,
       loop: true
     });
   </script>
   <script src="src/script.js?v=1.0"></script>
-  <script src="denimaulana/src/script.js?v=1.0"></script>
 </body>
 </html>
